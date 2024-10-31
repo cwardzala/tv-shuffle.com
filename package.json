@@ -1,0 +1,19 @@
+{
+  "name": "tv-shuffle.com",
+  "version": "1.0.0",
+  "description": "Website for TV Shuffle",
+  "main": "index.js",
+  "repository": "https://github.com/cwardzala/tv-shuffle.com",
+  "author": "Cameron Wardzala",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  }
+}
