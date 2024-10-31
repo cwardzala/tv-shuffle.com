@@ -2,37 +2,88 @@
 layout: 'layouts/base.njk'
 ---
 
-<div class="text-center mb-4">
-    <img src="./img/tvs-logo-960.png" alt="" class="d-block mx-auto" style="width: 300px" />
-    <h1 class="fw-bold">TV Shuffle</h1>
-    <a href="#" class="btn btn-light btn-icon-text">
-        <span class="d-flex flex-row align-items-center gap-2">
-            <i class="bi-apple btn-icon-prepend fs-2"></i>
-            <span class="d-inline-block text-start">
-                <small class="fw-light d-block">Coming Soon</small>
-                App Store
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <img src="./img/tvs-logo-960.png" alt="" class="d-block mx-auto" style="width: 300px" />
+        <h1 class="fw-bold">TV Shuffle</h1>
+        <a href="#" class="btn btn-light btn-icon-text">
+            <span class="d-flex flex-row align-items-center gap-2">
+                <i class="bi-apple btn-icon-prepend fs-2"></i>
+                <span class="d-inline-block text-start">
+                    <small class="fw-light d-block">Coming Soon</small>
+                    App Store
+                </span>
             </span>
-        </span>
-    </a>
+        </a>
+    </div>
+
+    <p class="lead">
+        Can't decide which episode to watch? This app makes it easy! Whether you're revisiting an old favorite or just
+        want to dive into a new show, our app lets you explore your favorite series and pick an episode at random for a
+        fun and spontaneous viewing experience.
+    </p>
 </div>
 
-<p class="lead">
-    Can't decide which episode to watch? This app makes it easy! Whether you're revisiting an old favorite or just want
-    to dive into a new show, our app lets you explore your favorite series and pick an episode at random for a fun and
-    spontaneous viewing experience.
-</p>
+<div class="section bg-blue overflow-hidden text-black">
+    <div class="container-md py-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-8">
+                <h2 class="display-4 fw-semibold">Search for Any Show</h2>
+                <p class="lead">Quickly find any TV show you're in the mood for.</p>
+                <p>Once you have found your favorite show, add it to your library for quick access later.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <img
+                    src="./img/search.png"
+                    alt=""
+                    class="device border border-black border-5 rounded-5 d-inline-block shadow"
+                />
+            </div>
+        </div>
+    </div>
+</div>
 
-<h2>Features:</h2>
-<ul>
-    <li><strong>Search for Any Show</strong> - Quickly find any TV show you're in the mood for.</li>
-    <li><strong>Random Episode Picker</strong> - Simply tap, and the app will choose a random episode for you!</li>
-    <li>
-        <strong>Surprise Yourself</strong> - Perfect for when you can't pick or want a fresh look at familiar shows.
-    </li>
-</ul>
+<div class="section bg-green overflow-hidden text-black">
+    <div class="container-md py-4">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-8">
+                <h2 class="display-4 fw-semibold">Random Episode Picker</h2>
+                <p class="lead">Simply tap, and the app will choose a random episode for you!</p>
+                <p>For every random episode you will see:</p>
+                <ul>
+                    <li>Episode snapshot <small>(if available)</small></li>
+                    <li>Season and episode number</li>
+                    <li>Episode title</li>
+                    <li>Episode description</li>
+                    <li>Where to stream and/or buy <small>(powered by JustWatch)</small></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 text-sm-end text-md-start text-nowrap">
+                <img
+                    src="./img/random-episode.png"
+                    alt=""
+                    class="device border border-black border-5 rounded-5 d-inline-block shadow position-relative end-0"
+                />
+            </div>
+        </div>
+    </div>
+</div>
 
-{#
-<p>Take the guesswork out of picking an episode. Download now and start watching!</p>
-#}
-
-<div class="text-center"></div>
+<div class="section bg-danger overflow-hidden text-black">
+    <div class="container-md py-4">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2 class="display-4 fw-semibold">List or Grid Layout</h2>
+                <p class="lead">Choose the layout that works for you!</p>
+            </div>
+            <div class="col-12 col-md-6 text-end text-nowrap">
+                <img
+                    src="./img/grid.png"
+                    alt=""
+                    class="device border border-black border-5 rounded-5 d-inline-block me-4"
+                />
+                <img src="./img/list.png" alt="" class="device border border-black border-5 rounded-5 d-inline-block" />
+            </div>
+        </div>
+    </div>
+</div>

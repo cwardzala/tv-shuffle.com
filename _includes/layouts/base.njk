@@ -24,18 +24,14 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
         />
-        <style>
-            body {
-                background-color: #262626;
-            }
-        </style>
+        <link rel="stylesheet" href="/styles/styles.css" />
     </head>
 
-    <body class="d-flex h-100 flex-column bg-neutral-800 text-white py-5">
-        <main class="flex-grow-1 container-sm mx-auto {% if templateClass %} {{ templateClass }}{% endif %}">
+    <body class="d-flex h-100 flex-column bg-neutral-800 text-white">
+        <div class="flex-grow-1 {% if templateClass %} {{ templateClass }}{% endif %}">
             {{ content | safe }}
-        </main>
-        <footer class="container text-center">
+        </div>
+        <footer class="container text-center py-3">
             <span>&copy; {{ helpers.currentYear() }} Cameron Wardzala</span> -
             <a href="/privacy-policy" class="link-light">Privacy Policy</a>
         </footer>
