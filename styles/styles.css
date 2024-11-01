@@ -15,14 +15,7 @@ body {
     width: 80%;
 }
 
-.section {
-    height: 800px;
-}
-
 @media (min-width: 768px) {
-    .section {
-        height: 500px;
-    }
     .device {
         width: 300px;
     }
