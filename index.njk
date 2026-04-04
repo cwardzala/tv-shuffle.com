@@ -2,85 +2,81 @@
 layout: 'layouts/base.njk'
 ---
 
-<div class="container my-5">
-    <div class="text-center mb-4">
-        <img src="./img/tvs-logo-960.png" alt="" class="d-block mx-auto" style="width: 300px" />
-        <h1 class="fw-bold">TV Shuffle</h1>
-        <a
-            href="https://apps.apple.com/us/app/tv-shuffle/id6737577166"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-light btn-icon-text"
-        >
-            <span class="d-flex flex-row align-items-center gap-2">
-                <i class="bi-apple btn-icon-prepend fs-2"></i>
-                <span class="d-inline-block text-start">
-                    <small class="fw-light d-block">Download Now</small>
-                    App Store
-                </span>
-            </span>
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="/" class="logo">
+            <img src="./img/tvs-logo-960.png" alt="TV Shuffle" />
+            <span class="logo-text">TV Shuffle</span>
         </a>
     </div>
+</nav>
 
-    <p class="lead">
-        Can't decide which episode to watch? This app makes it easy! Whether you're revisiting an old favorite or just
-        want to dive into a new show, our app lets you explore your favorite series and pick an episode at random for a
-        fun and spontaneous viewing experience.
+<section class="hero">
+    <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Now on iOS
+    </div>
+    <h1 class="hero-title">
+        Can't decide?<br/>
+        <span class="hero-title-accent">Let us pick.</span>
+    </h1>
+    <p class="hero-subtitle">
+        TV Shuffle randomly selects episodes from your favorite shows. Perfect for binge rewatches or discovering new episodes from series you love.
     </p>
-</div>
+    <a href="https://apps.apple.com/us/app/tv-shuffle/id6737577166" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        <i class="bi-apple"></i>
+        Download on App Store
+    </a>
+    <img src="./img/search-portrait.png" alt="TV Shuffle App" class="hero-image" />
+</section>
 
-<div class="section bg-blue overflow-hidden text-black">
-    <div class="container py-4">
-        <div class="row align-items-center">
-            <div class="col-12 col-sm-6">
-                <h2 class="display-4 fw-semibold">Search for Any Show</h2>
-                <p class="lead">Quickly find any TV show you're in the mood for.</p>
-                <p>Once you have found your favorite show, add it to your library for quick access later.</p>
+<section class="features">
+    <div class="features-inner">
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="bi bi-search"></i>
+                </div>
+                <h3>Search Shows</h3>
+                <p>Find any TV show in seconds. Add favorites to your library for quick access anytime.</p>
             </div>
-            <div class="col-12 col-sm-6">
-                <img src="./img/search-portrait.png" alt="" class="device d-block mx-auto" />
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="bi bi-shuffle"></i>
+                </div>
+                <h3>Shuffle Episodes</h3>
+                <p>Tap a show and get a random episode. See snapshots, titles, descriptions, and where to watch.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="bi bi-grid-3x3"></i>
+                </div>
+                <h3>Custom Layouts</h3>
+                <p>Choose between grid or list view. Sort your library your way for the perfect experience.</p>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="section bg-green overflow-hidden text-black">
-    <div class="container py-4">
-        <div class="row align-items-center">
-            <div class="col-12 col-sm-6 order-md-2">
-                <h2 class="display-4 fw-semibold">Random Episode Picker</h2>
-                <p class="lead">Simply tap any of your shows, and TV Shuffle will choose a random episode for you!</p>
-                <p>For every random episode you will see:</p>
-                <ul>
-                    <li>Episode snapshot <small>(if available)</small></li>
-                    <li>Season and episode number</li>
-                    <li>Episode title</li>
-                    <li>Episode description</li>
-                    <li>Where to stream and/or buy <small>(powered by JustWatch)</small></li>
-                </ul>
-                <p>
-                    Additionally you can customize your shuffle by choosing all seasons of a show or just the specific
-                    season you want to shuffle.
-                </p>
-            </div>
-            <div class="col-12 col-sm-6 text-sm-end text-md-start text-nowrap order-md-1">
-                <img src="./img/random-episode-portrait.png" alt="" class="device d-block mx-auto" />
-            </div>
+<section class="screenshot-section">
+    <div class="screenshot-section-inner">
+        <h2>See it in action</h2>
+        <p class="lead">Beautiful, simple, and easy to use</p>
+        <div class="screenshot-grid">
+            <img src="./img/search-portrait.png" alt="Search" class="screenshot-img" />
+            <img src="./img/random-episode-portrait.png" alt="Random episode" class="screenshot-img" />
+            <img src="./img/layouts.png" alt="Layouts" class="screenshot-img" />
         </div>
     </div>
-</div>
+</section>
 
-<div class="section bg-danger overflow-hidden text-black">
-    <div class="container py-4">
-        <div class="row align-items-center">
-            <div class="col-12 col-md-6">
-                <h2 class="display-4 fw-semibold">Multiple layouts</h2>
-                <p class="lead">Choose the layout that works for you!</p>
-                <p>With grid and list layouts along with sorting, you can find the layout that works for you!</p>
-            </div>
-            <div class="col-12 col-md-6 text-end text-nowrap">
-                <img src="./img/layouts.png" alt="" class="device d-block mx-auto" />
-            </div>
-        </div>
+<section class="cta-section">
+    <div class="cta-section-inner">
+        <h2>Ready to shuffle?</h2>
+        <p>Download TV Shuffle today and never stress about what to watch next.</p>
+        <a href="https://apps.apple.com/us/app/tv-shuffle/id6737577166" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <i class="bi-apple"></i>
+            Download on App Store
+        </a>
     </div>
-</div>
+</section>

@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js h-100">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{title or metadata.title}}</title>
-        <meta name="description" content="{{ description or metadata.description }}" />
+        <title>{{ title or "TV Shuffle" }}</title>
+        <meta name="description" content="{{ description or "Can't decide which episode to watch? Let TV Shuffle pick for you!" }}" />
 
-        <meta property="og:title" content="" />
-        <meta property="og:type" content="" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="" />
-        <meta property="og:image:alt" content="" />
+        <meta property="og:title" content="TV Shuffle" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Can't decide which episode to watch? Let TV Shuffle pick for you!" />
 
         {% include 'favicons.njk' %}
 
@@ -27,13 +25,14 @@
         <link rel="stylesheet" href="/styles/styles.css" />
     </head>
 
-    <body class="d-flex h-100 flex-column bg-neutral-800 text-white">
-        <div class="flex-grow-1 {% if templateClass %} {{ templateClass }}{% endif %}">
-            {{ content | safe }}
-        </div>
-        <footer class="container text-center py-3">
-            <span>&copy; {{ helpers.currentYear() }} Cameron Wardzala</span> -
-            <a href="/privacy-policy" class="link-light">Privacy Policy</a>
+    <body>
+        {{ content | safe }}
+        
+        <footer>
+            <div class="container">
+                <p>&copy; {{ helpers.currentYear() }} Cameron Wardzala</p>
+                <a href="/privacy-policy">Privacy Policy</a>
+            </div>
         </footer>
     </body>
 </html>

@@ -3,15 +3,16 @@ layout: 'layouts/base.njk'
 ---
 
 <nav class="navbar">
-    <div class="container">
-        <a href="/" class="navbar-brand d-flex flex-row align-items-center link-light gap-1">
-            <img src="/img/tvs-logo-960.png" style="width: 50px" /> TV Shuffle
+    <div class="navbar-inner">
+        <a href="/" class="logo">
+            <img src="/img/tvs-logo-960.png" alt="TV Shuffle" />
+            <span class="logo-text">TV Shuffle</span>
         </a>
     </div>
 </nav>
 
-<main class="container">
-    <div class="py-3"></div>
-
-    {{ content | safe }}
+<main class="page-content">
+    <div class="page-inner">
+        {{ content | safe }}
+    </div>
 </main>
